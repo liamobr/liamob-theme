@@ -1,0 +1,134 @@
+ul {
+  margin: 0;
+}
+
+ul ul {
+  margin: 0;
+}
+
+.nav-menu {
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+
+.top-bar-wind-data {
+  height: 32px;
+  background-color: darken($dark-gray, 40%);
+}
+
+.top-bar-wind-data span {
+  color: $white;
+  float: right;
+  padding: 3px 1em 3px 0;
+}
+
+.top-bar.is-anchored.is-at-top {
+  background: transparent;
+}
+
+.top-bar.is-anchored.is-at-top a {
+  color: $white;
+}
+
+.top-bar.is-anchored.is-at-top:hover {
+  background-color: $white;
+}
+
+.top-bar.is-anchored.is-at-top:hover a {
+    color: $dark-gray;
+}
+
+.top-bar {
+  padding: 0 10px;
+  background-color: $white;
+  transition: background-color 1s ease-in 0s;
+}
+
+.top-bar-right .show-for-large .menu {
+  background-color: transparent;
+}
+
+.nav-logo {
+  display: inline-block;
+  width: 70px;
+  margin: 5px 10px;
+
+  @include breakpoint(small only){
+    width: 50px;
+  }
+}
+
+.nav-title {
+  display: inline-block;
+}
+
+.nav-title img {
+  height: 35px;
+}
+
+.menu li.menu-item a {
+
+  @include button(false, transparent, $light-gray, $dark-gray, solid);
+
+  text-align: left;
+  font-size: 1.1em;
+  width: 100%;
+  height: 80px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+}
+
+.menu .menu-item {
+  height: 80px;
+}
+
+.submenu li.menu-item a {
+  color: $black;
+  text-align: left;
+  font-size: 1em;
+  height: auto;
+  width: 100%;
+  margin: 0;
+  padding: 1.25em;
+}
+
+li.menu-item a:hover {
+  border-bottom: 3px solid $primary-color;
+}
+
+.submenu .menu-item {
+  height: auto;
+}
+
+.nav-menu-button {
+  @include button(false, transparent, $light-gray, $dark-gray, solid);
+
+  font-size: 1.3em;
+  margin: 0;
+  height: 80px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  @include breakpoint(small only){
+    font-size: 1.1em;
+    margin: 0;
+    height: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+.off-canvas-wrapper {
+  z-index: 1000;
+}
+
+.breadcrumbs-wrapper {
+  background: $white;
+  padding: 0.4em 1em;
+}
+
+.breadcrumbs-container {
+  padding: 0.4em 1em 0.4em 4%;
+}
