@@ -40,8 +40,8 @@ if ( ! function_exists( 'foundationpress_scripts' ) ) :
 		wp_enqueue_style( 'main-stylesheet', get_stylesheet_directory_uri() . '/dist/assets/css/' . foundationpress_asset_path( 'app.css' ), array(), '2.10.4', 'all' );
 
 		//Ubuntu font
-		wp_register_style('ubuntu', 'https://fonts.googleapis.com/css?family=Ubuntu');
-		wp_enqueue_style('ubuntu');
+		wp_register_style('oswald', 'https://fonts.googleapis.com/css?family=Oswald');
+		wp_enqueue_style('oswald');
 
 		// Deregister the jquery version bundled with WordPress.
 		wp_deregister_script( 'jquery' );
@@ -57,6 +57,10 @@ if ( ! function_exists( 'foundationpress_scripts' ) ) :
 
 		// Enqueue jQuery migrate. Uncomment the line below to enable.
 		// wp_enqueue_script( 'jquery-migrate' );
+
+		//Enqueue particle.js
+		wp_register_script( 'particle-js', get_stylesheet_directory_uri() . '/dist/assets/js/particles.js');
+		wp_enqueue_script('particle-js');
 
 		// Enqueue Foundation scripts
 		wp_register_script( 'foundation', get_stylesheet_directory_uri() . '/dist/assets/js/' . foundationpress_asset_path( 'app.js' ), array( 'jquery' ), '2.10.4', true );

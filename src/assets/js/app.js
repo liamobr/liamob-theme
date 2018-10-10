@@ -1,4 +1,5 @@
 import $ from 'jquery';
+import Parallax from 'parallax-js';
 import whatInput from 'what-input';
 
 window.$ = $;
@@ -9,3 +10,12 @@ import Foundation from 'foundation-sites';
 //import './lib/foundation-explicit-pieces';
 
 $(document).foundation();
+
+$(document).ready(function(){
+    var scene = document.getElementById('top-scene');
+    var parallaxInstance = new Parallax(scene);
+
+    particlesJS.load('particles-canvas', 'wp-content/themes/master/dist/assets/particlesjs-config.json', function() {
+        console.log('callback - particles.js config loaded');
+    });
+});

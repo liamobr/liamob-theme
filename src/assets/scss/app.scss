@@ -18,3 +18,30 @@
 @import "modules/footer";
 @import "modules/utils";
 
+body {
+  overflow-x: hidden;
+}
+
+#top-scene h2 {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.primary-color {
+  color: $secondary-color;
+}
+
+#particles-canvas {
+  width: 100%;
+  height: 100%;
+
+  background-image: url('/wp-content/themes/master/dist/assets/images/concrete-texture.png');
+}
+
+.particles-js-canvas-el {
+  position: absolute;
+  top: 0;
+}
