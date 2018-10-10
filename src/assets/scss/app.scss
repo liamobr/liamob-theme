@@ -18,7 +18,8 @@
 @import "modules/footer";
 @import "modules/utils";
 
-body {
+html {
+  overflow-y: scroll;
   overflow-x: hidden;
 }
 
