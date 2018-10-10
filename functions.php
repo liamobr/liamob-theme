@@ -49,7 +49,3 @@ require_once( 'library/responsive-images.php' );
 
 /** If your site requires protocol relative url's for theme assets, uncomment the line below */
 // require_once( 'library/class-foundationpress-protocol-relative-theme-assets.php' );
-
-//Declares and adds widgets
-require_once(__DIR__ . '/template-parts/sponsors-footer-widget.php');
-require_once(__DIR__ . '/template-parts/footer-widget.php');
