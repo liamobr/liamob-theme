@@ -1,6 +1,5 @@
 import $ from 'jquery';
 import Parallax from 'parallax-js';
-import Typed from 'typed.js';
 import whatInput from 'what-input';
 
 window.$ = $;
@@ -16,8 +15,16 @@ $(document).ready(function(){
     var topScene = document.getElementById('top-scene');
     var topParallaxInstance = new Parallax(topScene);
 
+    window.onscroll = function() {
+        let windowScroll = document.documentElement.scrollTop;
+        let windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        let scrollAmount = (windowScroll / windowHeight) * 100;
+        document.getElementById("scroll-bar").style.height = scrollAmount + "%";
+    }
+
     particlesJS.load('particles-canvas', 'wp-content/themes/liamob-theme/dist/assets/particlesjs-config.json', function() {
         console.log('callback - particles.js config loaded');
     });
 
 });
+

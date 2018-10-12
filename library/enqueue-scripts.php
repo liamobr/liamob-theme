@@ -40,8 +40,8 @@ if ( ! function_exists( 'foundationpress_scripts' ) ) :
 		wp_enqueue_style( 'main-stylesheet', get_stylesheet_directory_uri() . '/dist/assets/css/' . foundationpress_asset_path( 'app.css' ), array(), '2.10.4', 'all' );
 
 		//Ubuntu font
-		wp_register_style('oswald', 'https://fonts.googleapis.com/css?family=Oswald');
-		wp_enqueue_style('oswald');
+		wp_register_style('google-fonts', 'https://fonts.googleapis.com/css?family=Oswald|Raleway');
+		wp_enqueue_style('google-fonts');
 
 		// Deregister the jquery version bundled with WordPress.
 		wp_deregister_script( 'jquery' );

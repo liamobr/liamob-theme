@@ -1,5 +1,9 @@
 <?php get_header(); ?>
 
+<div id="scroll-bar">
+
+</div>
+
 <section id="side-menu" class="show-for-medium">
     <ul>
         <li>
@@ -35,5 +39,44 @@
     </div>
 </section>
 
+<section id="about">
+    <div class="bird-container">
+        <div class="bird-parent bird-parent--one">
+            <div class="bird bird--one"></div>
+        </div>
+
+        <div class="bird-parent bird-parent--two">
+            <div class="bird bird--two"></div>
+        </div>
+
+        <div class="bird-parent bird-parent--three">
+            <div class="bird bird--three"></div>
+        </div>
+
+        <div class="bird-parent bird-parent--four">
+            <div class="bird bird--four"></div>
+        </div>
+
+        <div class="bird-parent bird-parent--five">
+            <div class="bird bird--five"></div>
+        </div>
+    </div>
+
+    <div id="about-text">
+        <p>My name is  <span class="emphasis">Liam O'Brien</span></p>
+        <p>I'm based on the Mornington Peninsula</p>
+        <p>I'm a <span class="emphasis">nerd</span> who has a passion for creating</p>
+        <p>Scroll down to view my work</p>
+    </div>
+
+</section>
+
+<div class="section-divider">
+
+</div>
+
+<section class="full">
+
+</section>
 
 <?php get_footer(); ?>

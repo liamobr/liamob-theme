@@ -13,14 +13,41 @@
 @import "global/wp-overrides";
 
 // Modules
-@import "modules/navigation";
 @import "modules/content";
-@import "modules/footer";
-@import "modules/utils";
 
 html {
   overflow-y: scroll;
   overflow-x: hidden;
+}
+
+.emphasis {
+  color: $secondary-color;
+}
+
+.full-width {
+  max-width: none;
+  width: 100%;
+}
+
+.section-divider {
+  height: 3em;
+
+  background: linear-gradient(174deg, transparent 0%, transparent 65%, $primary-color 1%, $primary-color 0%),
+              linear-gradient(168deg, $body-background 0%, $body-background 65%, $secondary-color 35%, $secondary-color 0%);
+
+  @include breakpoint(medium){
+    background: linear-gradient(186deg, transparent 0%, transparent 75%, $primary-color 1%, $primary-color 0%),
+                linear-gradient(192deg, $body-background 0%, $body-background 75%, $secondary-color 25%, $secondary-color 0%);
+  }
+
+}
+
+#scroll-bar {
+  width: 4px;
+  background-color: $secondary-color;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 #top-scene {
@@ -61,10 +88,6 @@ html {
   height: 100%;
 }
 
-.layer.background {
-  background-image: url("/wp-content/themes/master/dist/assets/images/concrete-texture.png");
-}
-
 #side-menu {
   position: fixed;
   top: 0;
@@ -82,4 +105,19 @@ html {
       }
     }
   }
+}
+
+#about-text {
+  padding: 0 0.6em;
+  width: 100%;
+
+  @include breakpoint(medium){
+    text-align: right;
+  }
+
+  p {
+    font-size: calc(0.9em + 0.8vw);
+    font-family: 'Raleway', sans-serif;
+  }
+
 }
