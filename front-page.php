@@ -20,7 +20,7 @@
                         <i class="fas fa-envelope"></i>
                     </a>
                 </h2>
-                
+
                 <br>
                 <h4>Check out my GitHub or email me for a chat.</h4>
             </span>
