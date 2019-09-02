@@ -36,6 +36,6 @@ $post_title_array = wp_list_pluck( $posts_array, 'post_title', 'ID' );
     });
 </script>
 
-<script src="wp-content/themes/liamob-theme/dist/assets/js/terminal.js" defer>
+<script src="/wp-content/themes/liamob-theme/dist/assets/js/terminal.js" defer>
 
 <?php get_footer(); ?>

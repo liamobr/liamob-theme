@@ -58,10 +58,6 @@ if ( ! function_exists( 'foundationpress_scripts' ) ) :
 		// Enqueue jQuery migrate. Uncomment the line below to enable.
 		// wp_enqueue_script( 'jquery-migrate' );
 
-		// Enqueue Foundation scripts
-		wp_register_script( 'foundation', get_stylesheet_directory_uri() . '/dist/assets/js/' . foundationpress_asset_path( 'app.js' ), array( 'jquery' ), '2.10.4', true );
-		wp_enqueue_script('foundation');
-
 		//Font awesome
 		wp_register_style('fontawesome', 'https://use.fontawesome.com/releases/v5.3.1/css/fontawesome.css');
 		wp_register_style('fontawesome-solid', 'https://use.fontawesome.com/releases/v5.3.1/css/solid.css');
