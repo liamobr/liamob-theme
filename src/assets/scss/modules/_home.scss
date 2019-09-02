@@ -1,0 +1,47 @@
+body.home {
+  #top-scene {
+    height: 100%;
+  }
+
+  #particles-canvas {
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+
+    background-image: url('/wp-content/themes/liamob-theme/dist/assets/images/concrete-texture.png');
+  }
+
+  .particles-js-canvas-el {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+  }
+
+  .full {
+    height: 100vh;
+  }
+
+  .layer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+  }
+
+  i {
+    color: $primary-color;
+
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+
+  .content {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 40%;
+    transform: translateY(-50%);
+  }
+
+}

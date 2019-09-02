@@ -1,35 +1,20 @@
 {
-  "name": "foundationpress",
-  "title": "FoundationPress",
-  "version": "2.10.4",
-  "description": "FoundationPress is a WordPress starter theme based on Foundation 6 by Zurb",
-  "homepage": "https://foundationpress.olefredrik.com",
+  "name": "liamob-theme",
+  "title": "liamob-theme",
+  "version": "",
+  "description": "",
+  "homepage": "",
   "license": "MIT",
   "main": "gulpfile.js",
   "scripts": {
     "start": "gulp",
     "dev": "gulp build --dev",
     "build": "gulp build --production",
-    "package": "gulp package --production",
-    "phpcs": "gulp phpcs",
-    "phpcbf": "gulp phpcbf"
+    "package": "gulp package --production"
   },
-  "keywords": [
-    "FoundationPress",
-    "WordPress",
-    "starter theme",
-    "Foundation",
-    "semantic",
-    "mobile first",
-    "customizable",
-    "responsive"
-  ],
   "dependencies": {
-    "foundation-sites": "6.4.3",
     "jquery": "~3.0.0",
-    "motion-ui": "~1.2.2",
-    "tilt.js": "^1.2.1",
-    "what-input": "^4.1.3"
+    "tilt.js": "^1.2.1"
   },
   "devDependencies": {
     "ansi-colors": "^1.0.1",
@@ -65,13 +50,6 @@
     "webpack": "^3.10.0",
     "webpack-stream": "^4.0.0",
     "yargs": "^3.8.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/olefredrik/foundationpress.git"
-  },
-  "bugs": {
-    "url": "https://github.com/olefredrik/foundationpress/issues"
   },
   "babel": {
     "presets": [

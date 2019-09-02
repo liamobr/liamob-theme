@@ -40,7 +40,7 @@ if ( ! function_exists( 'foundationpress_scripts' ) ) :
 		wp_enqueue_style( 'main-stylesheet', get_stylesheet_directory_uri() . '/dist/assets/css/' . foundationpress_asset_path( 'app.css' ), array(), '2.10.4', 'all' );
 
 		//Ubuntu font
-		wp_register_style('google-fonts', 'https://fonts.googleapis.com/css?family=Oswald|Raleway');
+		wp_register_style('google-fonts', 'https://fonts.googleapis.com/css?family=Oswald:200|VT323');
 		wp_enqueue_style('google-fonts');
 
 		// Deregister the jquery version bundled with WordPress.
@@ -53,14 +53,10 @@ if ( ! function_exists( 'foundationpress_scripts' ) ) :
 		wp_deregister_script( 'jquery-migrate' );
 
 		// CDN hosted jQuery migrate for compatibility with jQuery 3.x
-		wp_register_script( 'jquery-migrate', '//code.jquery.com/jquery-migrate-3.0.1.min.js', array('jquery'), '3.0.1', false );
+		//wp_register_script( 'jquery-migrate', '//code.jquery.com/jquery-migrate-3.0.1.min.js', array('jquery'), '3.0.1', false );
 
 		// Enqueue jQuery migrate. Uncomment the line below to enable.
 		// wp_enqueue_script( 'jquery-migrate' );
-
-		//Enqueue particle.js
-		wp_register_script( 'particle-js', get_stylesheet_directory_uri() . '/dist/assets/js/particles.js');
-		wp_enqueue_script('particle-js');
 
 		// Enqueue Foundation scripts
 		wp_register_script( 'foundation', get_stylesheet_directory_uri() . '/dist/assets/js/' . foundationpress_asset_path( 'app.js' ), array( 'jquery' ), '2.10.4', true );
