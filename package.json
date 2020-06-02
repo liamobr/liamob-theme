@@ -13,7 +13,7 @@
     "package": "gulp package --production"
   },
   "dependencies": {
-    "jquery": "~3.0.0",
+    "jquery": "~3.5.0",
     "tilt.js": "^1.2.1"
   },
   "devDependencies": {
