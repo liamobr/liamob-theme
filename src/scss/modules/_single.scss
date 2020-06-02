@@ -1,0 +1,18 @@
+body.single-post {
+    text-align: center;
+    font-size: 1.4rem;
+    color: black;
+
+    main {
+        margin: 50px auto;
+        max-width: 800px;
+
+        div.back {
+            text-align: left;
+
+            a {
+                color: black;
+            }
+        }
+    }
+}

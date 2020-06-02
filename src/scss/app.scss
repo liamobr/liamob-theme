@@ -12,6 +12,7 @@ $secondary-color: #C71585;
 // Modules
 @import "modules/home";
 @import "modules/terminal";
+@import "modules/single";
 
 html {
   overflow-y: scroll;
